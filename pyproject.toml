@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "survey-analysis-ai-toolkit"
+version = "0.1.0"
+description = "Bunch of tools to help with survey analysis using AI"
+authors = ["Olivier <olivier@millsit.ca>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "survey_analysis_ai_toolkit"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.0"
+pyarrow = "^15.0.0"
+langchain = "^0.1.4"
+langchain-openai = "^0.0.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
